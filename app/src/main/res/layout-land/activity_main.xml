@@ -9,11 +9,10 @@
 
     <Button
         android:id="@+id/button_toast"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center_horizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp"
         android:onClick="onToast"
         android:padding="12dp"
@@ -21,12 +20,11 @@
 
     <TextView
         android:id="@+id/show_count"
-        android:layout_width="match_parent"
-        android:layout_height="455dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/button_toast"
-        android:layout_marginStart="24dp"
+        android:layout_width="537dp"
+        android:layout_height="289dp"
+        android:layout_marginTop="17dp"
         android:layout_marginEnd="12dp"
+        android:layout_toEndOf="@+id/button_toast"
         android:background="#FFEB3B"
         android:gravity="center"
         android:text="@string/textview"
@@ -37,11 +35,9 @@
 
     <Button
         android:id="@+id/button_count"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/show_count"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center_horizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/button_toast"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
         android:onClick="onCount"
