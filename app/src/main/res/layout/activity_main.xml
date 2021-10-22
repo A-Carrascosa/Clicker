@@ -15,6 +15,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp"
         android:padding="12dp"
+        android:onClick="onToast"
         android:text="@string/button_toast" />
 
     <TextView
@@ -39,5 +40,6 @@
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="12dp"
         android:padding="12dp"
+        android:onClick="onCount"
         android:text="@string/button_count" />
 </LinearLayout>
