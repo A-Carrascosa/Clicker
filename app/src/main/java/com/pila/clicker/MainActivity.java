@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,8 +35,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onCount(View view) {
-        count++;
         TextView showCount = findViewById(R.id.show_count);
+        Switch multiplicador = findViewById(R.id.multiplicador);
+        if (multiplicador.isChecked()) {
+            count = (count+1) * 10;
+        } else {
+            count++;
+        }
         showCount.setText(Integer.toString(count));
         Log.i("Count", Integer.toString(count));
     }
